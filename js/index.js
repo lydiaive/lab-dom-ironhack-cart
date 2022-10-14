@@ -87,6 +87,8 @@ function createProduct() {
   let newRow = document.querySelector("tbody").insertRow()
   newRow.innerHTML = newProductRow
   newRow.setAttribute('class', 'product')
+
+  newRow.getElementsByClassName('btn-remove')[0].addEventListener('click', removeProduct);
 }
 
 /* function changeQuantity(event) {
